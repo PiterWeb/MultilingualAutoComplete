@@ -1,18 +1,14 @@
 <template>
-    <h1>Predictor Yandex</h1>
+    <h1>Online Multilingual Auto-complete</h1>
+
+    <LangSelector />
 
     <TextInput />
 </template>
 
-<style>
+<style scoped>
 h1 {
     text-align: center;
     margin-bottom: 50px;
 }
-
-* {
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 </style>
