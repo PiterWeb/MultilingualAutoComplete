@@ -1,63 +1,48 @@
-# Nuxt 3 Minimal Starter
+# 🏳 MultilingualAutoComplete
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 📝 Description
 
-## Setup
+This is a simple project to demonstrate how to create a multilingual autocomplete using [Yandex predictor](https://yandex.com/dev/predictor/).
 
-Make sure to install the dependencies:
+## 📷 Screenshots
+
+![Screenshot](/screenshoots/screenshoot.png)
+
+
+## 📚 What I have learned
+
+- How to use Yandex predictor API
+- How Nuxt3 works
+- Use with more confidence composition API of Vue3
+
+
+## 📦 Built With
+
+- [Nuxt3](https://nuxt.com/)
+    - [Vue3](https://vuejs.org/)
+- [Yandex predictor API](https://yandex.com/dev/predictor/)
+- [PicoCSS](https://picocss.com/)
+
+## 🚀 Deploy
+
+You can see the project running [here](https://online-auto-complete.vercel.app/).
+
+
+
+## 👷‍♂️ Build yourself
+
+1. Clone the repository
+
+2. Install dependencies
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+3. Run the project
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
 ```
 
-## Production
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
