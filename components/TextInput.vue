@@ -1,39 +1,8 @@
 <script setup lang="ts">
 
-const { inputText, placeholder, prediction } = usePrediction("Write some text to try the predictions...")
+const { inputText, placeholder, prediction, appendPrediction } = usePrediction("Write some text to try the predictions...")
 
-function appendPrediction() {
-
-    const words = inputText.value.split(' ')
-
-    const lastWord = words.at(-1)
-
-    if (lastWord && prediction.value.includes(lastWord)) {
-        words.pop()
-    }
-
-    words.push(prediction.value)
-
-    inputText.value = words.join(' ')
-}
-
-function detectCtrlKey(e: KeyboardEvent) {
-    if (e.ctrlKey) {
-        appendPrediction()
-    }
-}
-
-onMounted(() => {
-    document.addEventListener('keydown', detectCtrlKey)
-})
-
-onUnmounted(() => {
-    document.removeEventListener('keydown', detectCtrlKey)
-})
-
-
-
-
+useCachedWords(inputText, prediction)
 
 </script>
 
@@ -65,6 +34,7 @@ span {
 
 textarea {
     resize: vertical;
+    min-height: 35vh;
 }
 
 button#append {
@@ -75,6 +45,10 @@ button#append {
 @media (max-width: 768px) {
     button#append {
         width: 100%;
+    }
+
+    textarea {
+        min-height: 18vh;
     }
 }
 </style>

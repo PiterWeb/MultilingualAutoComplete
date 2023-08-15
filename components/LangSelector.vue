@@ -29,5 +29,3 @@ const langSelected = computed({
         <option v-else>Loading...</option>
     </select>
 </template>
-
-<style scoped></style>
