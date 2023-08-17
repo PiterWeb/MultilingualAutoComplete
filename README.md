@@ -6,7 +6,7 @@ This is a simple project to demonstrate how to create a multilingual autocomplet
 
 ## 📷 Screenshots
 
-![Screenshot](/screenshoots/screenshoot.png)
+![Screenshot](/screenshoots/mockup.jpg)
 
 
 ## 📚 What I have learned
@@ -45,4 +45,13 @@ npm install
 npm run dev
 ```
 
+<style>
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+</style>
 
