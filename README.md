@@ -45,13 +45,3 @@ npm install
 npm run dev
 ```
 
-<style>
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 1rem;
-}
-
-</style>
-
