@@ -8,3 +8,4 @@ type TLang = 'af'| 'ar'| 'az'|  'ba'|  'be'| 'bg'|  'bs'|
 'sk'| 'sl'| 'sq'|  'sr'|  'sv'| 'sw'|  'tg'|
 'tl'| 'tr'| 'tt'|  'udm'| 'uk'| 'uz'|  'vi'
 
+type TLangMap = Map<TLang, string[]>
