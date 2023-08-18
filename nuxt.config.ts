@@ -5,7 +5,7 @@ export default defineNuxtConfig({
         transpile: ['@picocss/pico'],
 
     },
-    devtools: { enabled: true },
+    devtools: { enabled: false },
     runtimeConfig: {
         apiKey: process.env.YANDEX_API_KEY,
     },
