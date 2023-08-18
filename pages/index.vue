@@ -9,6 +9,6 @@
 <style scoped>
 h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 </style>

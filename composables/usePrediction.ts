@@ -1,6 +1,6 @@
 import { ref } from "vue";
 
-function appendPrediction(
+export function appendPrediction(
     inputText: globalThis.Ref<string>,
     prediction: globalThis.Ref<string>
 ) {
@@ -18,15 +18,17 @@ function appendPrediction(
     words.push(prediction.value);
 
     inputText.value = words.join(" ");
+
+    prediction.value = "";
 }
 
-function appendOnCtrlKey(
+function appendOnRightArrowKey(
     e: KeyboardEvent,
     inputText: globalThis.Ref<string>,
     prediction: globalThis.Ref<string>
 ) {
 
-    if (e.ctrlKey) appendPrediction(inputText, prediction);
+    if (e.key === "ArrowRight") appendPrediction(inputText, prediction);
 }
 
 export default function usePrediction(
@@ -37,13 +39,13 @@ export default function usePrediction(
 
     onMounted(() => {
         document.addEventListener("keydown", (e) =>
-            appendOnCtrlKey(e, inputText, prediction)
+            appendOnRightArrowKey(e, inputText, prediction)
         );
     });
 
     onUnmounted(() => {
         document.removeEventListener("keydown", (e) =>
-            appendOnCtrlKey(e, inputText, prediction)
+            appendOnRightArrowKey(e, inputText, prediction)
         );
     });
 
