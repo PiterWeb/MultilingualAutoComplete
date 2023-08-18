@@ -22,4 +22,22 @@ a#yandex {
 body {
   padding: 4rem;
 }
+
+/* generate a custom modern scrollbar with the colors of picocss (blue, black) */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
 </style>
